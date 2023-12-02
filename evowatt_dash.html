@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Evodash</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="evw_container">
+      <div class="evw_my_prices_title">My Prices</div>
+      <!-- search product input start -->
+      <div class="evw_search_product_input">
+        <div class="search_input_with_icon">
+          <input
+            type="text"
+            name=""
+            id="input_field"
+            placeholder="Search Product"
+          />
+          <span id="input_field_search_icon"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+            >
+              <g clip-path="url(#clip0_6_21)">
+                <path
+                  d="M11.742 10.344C12.7103 9.02267 13.144 7.38447 12.9563 5.75713C12.7686 4.12979 11.9734 2.63332 10.7297 1.56711C9.4861 0.500899 7.88573 -0.056418 6.24882 0.00665514C4.61191 0.0697283 3.05917 0.748541 1.90125 1.90729C0.743334 3.06603 0.0656328 4.61926 0.00373101 6.25621C-0.0581708 7.89317 0.500292 9.49314 1.56739 10.736C2.63449 11.9789 4.13153 12.773 5.759 12.9596C7.38648 13.1461 9.02436 12.7112 10.345 11.742H10.344C10.374 11.782 10.406 11.82 10.442 11.857L14.292 15.707C14.4795 15.8946 14.7339 16.0001 14.9991 16.0002C15.2644 16.0003 15.5188 15.895 15.7065 15.7075C15.8941 15.52 15.9996 15.2656 15.9997 15.0003C15.9998 14.7351 15.8945 14.4806 15.707 14.293L11.857 10.443C11.8212 10.4068 11.7828 10.3744 11.742 10.344ZM12 6.49998C12 7.22225 11.8577 7.93745 11.5813 8.60474C11.3049 9.27203 10.8998 9.87834 10.3891 10.3891C9.87835 10.8998 9.27203 11.3049 8.60474 11.5813C7.93745 11.8577 7.22225 12 6.49998 12C5.77771 12 5.06251 11.8577 4.39522 11.5813C3.72793 11.3049 3.12162 10.8998 2.61089 10.3891C2.10017 9.87834 1.69505 9.27203 1.41864 8.60474C1.14224 7.93745 0.999982 7.22225 0.999982 6.49998C0.999982 5.04129 1.57945 3.64234 2.6109 2.61089C3.64235 1.57944 5.04129 0.999979 6.49998 0.999979C7.95867 0.999979 9.35762 1.57944 10.3891 2.61089C11.4205 3.64234 12 5.04129 12 6.49998Z"
+                  fill="black"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_6_21">
+                  <rect width="16" height="16" fill="white" />
+                </clipPath>
+              </defs></svg
+          ></span>
+        </div>
+      </div>
+      <!-- search product input end -->
+      <div class="evw_apply_filter_section">
+        <!-- here apply filter title -->
+        <div class="evw_apply_filter_title">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            viewBox="0 0 16 16"
+            fill="none"
+          >
+            <path
+              d="M4.11334 12C4.25108 11.6097 4.5065 11.2716 4.84441 11.0326C5.18232 10.7935 5.58607 10.6651 6.00001 10.6651C6.41395 10.6651 6.8177 10.7935 7.15561 11.0326C7.49352 11.2716 7.74894 11.6097 7.88668 12H14.6667V13.3334H7.88668C7.74894 13.7237 7.49352 14.0617 7.15561 14.3008C6.8177 14.5399 6.41395 14.6683 6.00001 14.6683C5.58607 14.6683 5.18232 14.5399 4.84441 14.3008C4.5065 14.0617 4.25108 13.7237 4.11334 13.3334H1.33334V12H4.11334ZM8.11334 7.33336C8.25108 6.94301 8.5065 6.60498 8.84441 6.36589C9.18232 6.12679 9.58607 5.99839 10 5.99839C10.414 5.99839 10.8177 6.12679 11.1556 6.36589C11.4935 6.60498 11.7489 6.94301 11.8867 7.33336H14.6667V8.66669H11.8867C11.7489 9.05705 11.4935 9.39507 11.1556 9.63417C10.8177 9.87326 10.414 10.0017 10 10.0017C9.58607 10.0017 9.18232 9.87326 8.84441 9.63417C8.5065 9.39507 8.25108 9.05705 8.11334 8.66669H1.33334V7.33336H8.11334ZM4.11334 2.66669C4.25108 2.27634 4.5065 1.93832 4.84441 1.69922C5.18232 1.46012 5.58607 1.33173 6.00001 1.33173C6.41395 1.33173 6.8177 1.46012 7.15561 1.69922C7.49352 1.93832 7.74894 2.27634 7.88668 2.66669H14.6667V4.00003H7.88668C7.74894 4.39038 7.49352 4.7284 7.15561 4.9675C6.8177 5.2066 6.41395 5.33499 6.00001 5.33499C5.58607 5.33499 5.18232 5.2066 4.84441 4.9675C4.5065 4.7284 4.25108 4.39038 4.11334 4.00003H1.33334V2.66669H4.11334Z"
+              fill="black"
+            />
+          </svg>
+          Apply Filter
+        </div>
+        <!-- here apply filter title end -->
+
+        <section class="evw_section_items">
+          <!-- Product category -->
+          <div class="evw_apply_filter_product_category common_items_styling">
+            <div class="evw_apply_filter_product_category_title">
+              Product category
+            </div>
+
+            <div class="all_items">
+              <!-- this is common class -->
+              <div class="category_one">
+                <div class="custom-checkbox-container">
+                  <input type="checkbox" class="checkbox" id="category_1" />
+                  <label for="category_1" class="custom-checkbox-label">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <path
+                        d="M19 3H5C3.89 3 3 3.89 3 5V19C3 19.5304 3.21071 20.0391 3.58579 20.4142C3.96086 20.7893 4.46957 21 5 21H19C19.5304 21 20.0391 20.7893 20.4142 20.4142C20.7893 20.0391 21 19.5304 21 19V5C21 4.46957 20.7893 3.96086 20.4142 3.58579C20.0391 3.21071 19.5304 3 19 3ZM19 5V19H5V5H19Z"
+                        fill="black"
+                      />
+                    </svg>
+                  </label>
+                  <label for="category_1" class="evw_label"> Category 1</label>
+                </div>
+              </div>
+
+              <div class="category_two">
+                <div class="custom-checkbox-container">
+                  <input type="checkbox" class="checkbox" id="category_2" />
+                  <label for="category_2" class="custom-checkbox-label">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <path
+                        d="M19 3H5C3.89 3 3 3.89 3 5V19C3 19.5304 3.21071 20.0391 3.58579 20.4142C3.96086 20.7893 4.46957 21 5 21H19C19.5304 21 20.0391 20.7893 20.4142 20.4142C20.7893 20.0391 21 19.5304 21 19V5C21 4.46957 20.7893 3.96086 20.4142 3.58579C20.0391 3.21071 19.5304 3 19 3ZM19 5V19H5V5H19Z"
+                        fill="black"
+                      />
+                    </svg>
+                  </label>
+                  <label for="category_2" class="evw_label"> Category 2</label>
+                </div>
+              </div>
+
+              <div class="category_three">
+                <div class="custom-checkbox-container">
+                  <input type="checkbox" class="checkbox" id="category_3" />
+                  <label for="category_3" class="custom-checkbox-label">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <path
+                        d="M19 3H5C3.89 3 3 3.89 3 5V19C3 19.5304 3.21071 20.0391 3.58579 20.4142C3.96086 20.7893 4.46957 21 5 21H19C19.5304 21 20.0391 20.7893 20.4142 20.4142C20.7893 20.0391 21 19.5304 21 19V5C21 4.46957 20.7893 3.96086 20.4142 3.58579C20.0391 3.21071 19.5304 3 19 3ZM19 5V19H5V5H19Z"
+                        fill="black"
+                      />
+                    </svg>
+                  </label>
+                  <label for="category_3" class="evw_label"> Category 3</label>
+                </div>
+              </div>
+
+              <div class="category_four">
+                <div class="custom-checkbox-container">
+                  <input type="checkbox" class="checkbox" id="category_4" />
+                  <label for="category_4" class="custom-checkbox-label">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <path
+                        d="M19 3H5C3.89 3 3 3.89 3 5V19C3 19.5304 3.21071 20.0391 3.58579 20.4142C3.96086 20.7893 4.46957 21 5 21H19C19.5304 21 20.0391 20.7893 20.4142 20.4142C20.7893 20.0391 21 19.5304 21 19V5C21 4.46957 20.7893 3.96086 20.4142 3.58579C20.0391 3.21071 19.5304 3 19 3ZM19 5V19H5V5H19Z"
+                        fill="black"
+                      />
+                    </svg>
+                  </label>
+                  <label for="category_4" class="evw_label"> Category 4</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Brand -->
+          <div class="evw_apply_filter_brand common_items_styling">
+            <div class="evw_apply_filter_brand_title">Brand</div>
+            <div class="all_items">
+              <div class="brand_one">
+                <div class="custom-checkbox-container">
+                  <input type="checkbox" class="checkbox" id="brand_1" />
+                  <label for="brand_1" class="custom-checkbox-label">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <path
+                        d="M19 3H5C3.89 3 3 3.89 3 5V19C3 19.5304 3.21071 20.0391 3.58579 20.4142C3.96086 20.7893 4.46957 21 5 21H19C19.5304 21 20.0391 20.7893 20.4142 20.4142C20.7893 20.0391 21 19.5304 21 19V5C21 4.46957 20.7893 3.96086 20.4142 3.58579C20.0391 3.21071 19.5304 3 19 3ZM19 5V19H5V5H19Z"
+                        fill="black"
+                      />
+                    </svg>
+                  </label>
+                  <label for="brand_1" class="evw_label"> Brand 1</label>
+                </div>
+              </div>
+              <div class="brand_two">
+                <div class="custom-checkbox-container">
+                  <input type="checkbox" class="checkbox" id="brand_2" />
+                  <label for="brand_2" class="custom-checkbox-label">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <path
+                        d="M19 3H5C3.89 3 3 3.89 3 5V19C3 19.5304 3.21071 20.0391 3.58579 20.4142C3.96086 20.7893 4.46957 21 5 21H19C19.5304 21 20.0391 20.7893 20.4142 20.4142C20.7893 20.0391 21 19.5304 21 19V5C21 4.46957 20.7893 3.96086 20.4142 3.58579C20.0391 3.21071 19.5304 3 19 3ZM19 5V19H5V5H19Z"
+                        fill="black"
+                      />
+                    </svg>
+                  </label>
+                  <label for="brand_2" class="evw_label"> Brand 2</label>
+                </div>
+              </div>
+              <div class="brand_three">
+                <div class="custom-checkbox-container">
+                  <input type="checkbox" class="checkbox" id="brand_3" />
+                  <label for="brand_3" class="custom-checkbox-label">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <path
+                        d="M19 3H5C3.89 3 3 3.89 3 5V19C3 19.5304 3.21071 20.0391 3.58579 20.4142C3.96086 20.7893 4.46957 21 5 21H19C19.5304 21 20.0391 20.7893 20.4142 20.4142C20.7893 20.0391 21 19.5304 21 19V5C21 4.46957 20.7893 3.96086 20.4142 3.58579C20.0391 3.21071 19.5304 3 19 3ZM19 5V19H5V5H19Z"
+                        fill="black"
+                      />
+                    </svg>
+                  </label>
+                  <label for="brand_3" class="evw_label"> Brand 3</label>
+                </div>
+              </div>
+              <div class="brand_four">
+                <div class="custom-checkbox-container">
+                  <input type="checkbox" class="checkbox" id="brand_4" />
+                  <label for="brand_4" class="custom-checkbox-label">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <path
+                        d="M19 3H5C3.89 3 3 3.89 3 5V19C3 19.5304 3.21071 20.0391 3.58579 20.4142C3.96086 20.7893 4.46957 21 5 21H19C19.5304 21 20.0391 20.7893 20.4142 20.4142C20.7893 20.0391 21 19.5304 21 19V5C21 4.46957 20.7893 3.96086 20.4142 3.58579C20.0391 3.21071 19.5304 3 19 3ZM19 5V19H5V5H19Z"
+                        fill="black"
+                      />
+                    </svg>
+                  </label>
+                  <label for="brand_4" class="evw_label"> Brand 4</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Inverters -->
+          <div class="evw_apply_filter_inverters common_items_styling">
+            <div class="evw_apply_filter_inverters_title">Inverters</div>
+            <div class="all_items">
+              <div class="inverters_one">
+                <div class="custom-checkbox-container">
+                  <input type="checkbox" class="checkbox" id="inverters_1" />
+                  <label for="inverters_1" class="custom-checkbox-label">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <path
+                        d="M19 3H5C3.89 3 3 3.89 3 5V19C3 19.5304 3.21071 20.0391 3.58579 20.4142C3.96086 20.7893 4.46957 21 5 21H19C19.5304 21 20.0391 20.7893 20.4142 20.4142C20.7893 20.0391 21 19.5304 21 19V5C21 4.46957 20.7893 3.96086 20.4142 3.58579C20.0391 3.21071 19.5304 3 19 3ZM19 5V19H5V5H19Z"
+                        fill="black"
+                      />
+                    </svg>
+                  </label>
+                  <label for="inverters_1" class="evw_label">
+                    Inverters 1</label
+                  >
+                </div>
+              </div>
+              <div class="inverters_two">
+                <div class="custom-checkbox-container">
+                  <input type="checkbox" class="checkbox" id="inverters_2" />
+                  <label for="inverters_2" class="custom-checkbox-label">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <path
+                        d="M19 3H5C3.89 3 3 3.89 3 5V19C3 19.5304 3.21071 20.0391 3.58579 20.4142C3.96086 20.7893 4.46957 21 5 21H19C19.5304 21 20.0391 20.7893 20.4142 20.4142C20.7893 20.0391 21 19.5304 21 19V5C21 4.46957 20.7893 3.96086 20.4142 3.58579C20.0391 3.21071 19.5304 3 19 3ZM19 5V19H5V5H19Z"
+                        fill="black"
+                      />
+                    </svg>
+                  </label>
+                  <label for="inverters_2" class="evw_label">
+                    Inverters 2</label
+                  >
+                </div>
+              </div>
+              <div class="inverters_three">
+                <div class="custom-checkbox-container">
+                  <input type="checkbox" class="checkbox" id="inverters_3" />
+                  <label for="inverters_3" class="custom-checkbox-label">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <path
+                        d="M19 3H5C3.89 3 3 3.89 3 5V19C3 19.5304 3.21071 20.0391 3.58579 20.4142C3.96086 20.7893 4.46957 21 5 21H19C19.5304 21 20.0391 20.7893 20.4142 20.4142C20.7893 20.0391 21 19.5304 21 19V5C21 4.46957 20.7893 3.96086 20.4142 3.58579C20.0391 3.21071 19.5304 3 19 3ZM19 5V19H5V5H19Z"
+                        fill="black"
+                      />
+                    </svg>
+                  </label>
+                  <label for="inverters_3" class="evw_label">
+                    Inverters 3</label
+                  >
+                </div>
+              </div>
+              <div class="inverters_four">
+                <div class="custom-checkbox-container">
+                  <input type="checkbox" class="checkbox" id="inverters_4" />
+                  <label for="inverters_4" class="custom-checkbox-label">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <path
+                        d="M19 3H5C3.89 3 3 3.89 3 5V19C3 19.5304 3.21071 20.0391 3.58579 20.4142C3.96086 20.7893 4.46957 21 5 21H19C19.5304 21 20.0391 20.7893 20.4142 20.4142C20.7893 20.0391 21 19.5304 21 19V5C21 4.46957 20.7893 3.96086 20.4142 3.58579C20.0391 3.21071 19.5304 3 19 3ZM19 5V19H5V5H19Z"
+                        fill="black"
+                      />
+                    </svg>
+                  </label>
+                  <label for="inverters_4" class="evw_label">
+                    Inverters 4</label
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Phase -->
+
+          <div class="evw_apply_filter_phase common_items_styling">
+            <div class="evw_apply_filter_phase_title">Phase</div>
+            <div class="all_items">
+              <div class="phase_one">
+                <div class="custom-checkbox-container">
+                  <input type="checkbox" class="checkbox" id="phase_1" />
+                  <label for="phase_1" class="custom-checkbox-label">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <path
+                        d="M19 3H5C3.89 3 3 3.89 3 5V19C3 19.5304 3.21071 20.0391 3.58579 20.4142C3.96086 20.7893 4.46957 21 5 21H19C19.5304 21 20.0391 20.7893 20.4142 20.4142C20.7893 20.0391 21 19.5304 21 19V5C21 4.46957 20.7893 3.96086 20.4142 3.58579C20.0391 3.21071 19.5304 3 19 3ZM19 5V19H5V5H19Z"
+                        fill="black"
+                      />
+                    </svg>
+                  </label>
+                  <label for="phase_1" class="evw_label"> Phase 1</label>
+                </div>
+              </div>
+              <div class="phase_two">
+                <div class="custom-checkbox-container">
+                  <input type="checkbox" class="checkbox" id="phase_2" />
+                  <label for="phase_2" class="custom-checkbox-label">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <path
+                        d="M19 3H5C3.89 3 3 3.89 3 5V19C3 19.5304 3.21071 20.0391 3.58579 20.4142C3.96086 20.7893 4.46957 21 5 21H19C19.5304 21 20.0391 20.7893 20.4142 20.4142C20.7893 20.0391 21 19.5304 21 19V5C21 4.46957 20.7893 3.96086 20.4142 3.58579C20.0391 3.21071 19.5304 3 19 3ZM19 5V19H5V5H19Z"
+                        fill="black"
+                      />
+                    </svg>
+                  </label>
+                  <label for="phase_2" class="evw_label"> Phase 2</label>
+                </div>
+              </div>
+              <div class="phase_three">
+                <div class="custom-checkbox-container">
+                  <input type="checkbox" class="checkbox" id="phase_3" />
+                  <label for="phase_3" class="custom-checkbox-label">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <path
+                        d="M19 3H5C3.89 3 3 3.89 3 5V19C3 19.5304 3.21071 20.0391 3.58579 20.4142C3.96086 20.7893 4.46957 21 5 21H19C19.5304 21 20.0391 20.7893 20.4142 20.4142C20.7893 20.0391 21 19.5304 21 19V5C21 4.46957 20.7893 3.96086 20.4142 3.58579C20.0391 3.21071 19.5304 3 19 3ZM19 5V19H5V5H19Z"
+                        fill="black"
+                      />
+                    </svg>
+                  </label>
+                  <label for="phase_3" class="evw_label"> Phase 3</label>
+                </div>
+              </div>
+              <div class="phase_four">
+                <div class="custom-checkbox-container">
+                  <input type="checkbox" class="checkbox" id="phase_4" />
+                  <label for="phase_4" class="custom-checkbox-label">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <path
+                        d="M19 3H5C3.89 3 3 3.89 3 5V19C3 19.5304 3.21071 20.0391 3.58579 20.4142C3.96086 20.7893 4.46957 21 5 21H19C19.5304 21 20.0391 20.7893 20.4142 20.4142C20.7893 20.0391 21 19.5304 21 19V5C21 4.46957 20.7893 3.96086 20.4142 3.58579C20.0391 3.21071 19.5304 3 19 3ZM19 5V19H5V5H19Z"
+                        fill="black"
+                      />
+                    </svg>
+                  </label>
+                  <label for="phase_4" class="evw_label"> Phase 4</label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Options -->
+          <div class="evw_apply_filter_options common_items_styling">
+            <div class="evw_apply_filter_options_title">Options</div>
+            <div class="all_items">
+              <div class="options_one">
+                <div class="custom-checkbox-container">
+                  <input type="checkbox" class="checkbox" id="options_1" />
+                  <label for="options_1" class="custom-checkbox-label">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <path
+                        d="M19 3H5C3.89 3 3 3.89 3 5V19C3 19.5304 3.21071 20.0391 3.58579 20.4142C3.96086 20.7893 4.46957 21 5 21H19C19.5304 21 20.0391 20.7893 20.4142 20.4142C20.7893 20.0391 21 19.5304 21 19V5C21 4.46957 20.7893 3.96086 20.4142 3.58579C20.0391 3.21071 19.5304 3 19 3ZM19 5V19H5V5H19Z"
+                        fill="black"
+                      />
+                    </svg>
+                  </label>
+                  <label for="options_1" class="evw_label"> Options 1</label>
+                </div>
+              </div>
+              <div class="options_two">
+                <div class="custom-checkbox-container">
+                  <input type="checkbox" class="checkbox" id="options_2" />
+                  <label for="options_2" class="custom-checkbox-label">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <path
+                        d="M19 3H5C3.89 3 3 3.89 3 5V19C3 19.5304 3.21071 20.0391 3.58579 20.4142C3.96086 20.7893 4.46957 21 5 21H19C19.5304 21 20.0391 20.7893 20.4142 20.4142C20.7893 20.0391 21 19.5304 21 19V5C21 4.46957 20.7893 3.96086 20.4142 3.58579C20.0391 3.21071 19.5304 3 19 3ZM19 5V19H5V5H19Z"
+                        fill="black"
+                      />
+                    </svg>
+                  </label>
+                  <label for="options_2" class="evw_label"> Options 2</label>
+                </div>
+              </div>
+              <div class="options_three">
+                <div class="custom-checkbox-container">
+                  <input type="checkbox" class="checkbox" id="options_3" />
+                  <label for="options_3" class="custom-checkbox-label">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <path
+                        d="M19 3H5C3.89 3 3 3.89 3 5V19C3 19.5304 3.21071 20.0391 3.58579 20.4142C3.96086 20.7893 4.46957 21 5 21H19C19.5304 21 20.0391 20.7893 20.4142 20.4142C20.7893 20.0391 21 19.5304 21 19V5C21 4.46957 20.7893 3.96086 20.4142 3.58579C20.0391 3.21071 19.5304 3 19 3ZM19 5V19H5V5H19Z"
+                        fill="black"
+                      />
+                    </svg>
+                  </label>
+                  <label for="options_3" class="evw_label"> Options 3</label>
+                </div>
+              </div>
+              <div class="options_four">
+                <div class="custom-checkbox-container">
+                  <input type="checkbox" class="checkbox" id="options_4" />
+                  <label for="options_4" class="custom-checkbox-label">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <path
+                        d="M19 3H5C3.89 3 3 3.89 3 5V19C3 19.5304 3.21071 20.0391 3.58579 20.4142C3.96086 20.7893 4.46957 21 5 21H19C19.5304 21 20.0391 20.7893 20.4142 20.4142C20.7893 20.0391 21 19.5304 21 19V5C21 4.46957 20.7893 3.96086 20.4142 3.58579C20.0391 3.21071 19.5304 3 19 3ZM19 5V19H5V5H19Z"
+                        fill="black"
+                      />
+                    </svg>
+                  </label>
+                  <label for="options_4" class="evw_label"> Options 4</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Options end -->
+        </section>
+      </div>
+
+      <!-- End filter section -->
+
+      <!-- 999 Results found and csv export -->
+      <div class="evw_results_found_cvs_export">
+        <div class="evw_result_found">999 Results found</div>
+        <div class="evw_csv_export_button">
+          <button>
+            <span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="20"
+                viewBox="0 0 18 20"
+                fill="none"
+              >
+                <path
+                  d="M17.92 13.62C17.8694 13.4988 17.7983 13.3872 17.71 13.29L14.71 10.29C14.5217 10.1017 14.2663 9.99591 14 9.99591C13.7337 9.99591 13.4783 10.1017 13.29 10.29C13.1017 10.4783 12.9959 10.7337 12.9959 11C12.9959 11.2663 13.1017 11.5217 13.29 11.71L14.59 13H9C8.73478 13 8.48043 13.1054 8.29289 13.2929C8.10536 13.4804 8 13.7348 8 14C8 14.2652 8.10536 14.5196 8.29289 14.7071C8.48043 14.8946 8.73478 15 9 15H14.59L13.29 16.29C13.1963 16.383 13.1219 16.4936 13.0711 16.6154C13.0203 16.7373 12.9942 16.868 12.9942 17C12.9942 17.132 13.0203 17.2627 13.0711 17.3846C13.1219 17.5064 13.1963 17.617 13.29 17.71C13.383 17.8037 13.4936 17.8781 13.6154 17.9289C13.7373 17.9797 13.868 18.0058 14 18.0058C14.132 18.0058 14.2627 17.9797 14.3846 17.9289C14.5064 17.8781 14.617 17.8037 14.71 17.71L17.71 14.71C17.8026 14.6161 17.8742 14.5036 17.92 14.38C18.02 14.1365 18.02 13.8635 17.92 13.62ZM11 18H3C2.73478 18 2.48043 17.8946 2.29289 17.7071C2.10536 17.5196 2 17.2652 2 17V3C2 2.73478 2.10536 2.48043 2.29289 2.29289C2.48043 2.10536 2.73478 2 3 2H8V5C8 5.79565 8.31607 6.55871 8.87868 7.12132C9.44129 7.68393 10.2044 8 11 8H15C15.1974 7.99901 15.3901 7.93961 15.5539 7.82928C15.7176 7.71895 15.845 7.56262 15.92 7.38C15.9966 7.19789 16.0175 6.99718 15.9801 6.80319C15.9428 6.6092 15.8488 6.43062 15.71 6.29L9.71 0.29C9.62734 0.212216 9.53282 0.148081 9.43 0.0999999H9.34L9.06 0H3C2.20435 0 1.44129 0.316071 0.87868 0.87868C0.316071 1.44129 0 2.20435 0 3V17C0 17.7956 0.316071 18.5587 0.87868 19.1213C1.44129 19.6839 2.20435 20 3 20H11C11.2652 20 11.5196 19.8946 11.7071 19.7071C11.8946 19.5196 12 19.2652 12 19C12 18.7348 11.8946 18.4804 11.7071 18.2929C11.5196 18.1054 11.2652 18 11 18ZM10 3.41L12.59 6H11C10.7348 6 10.4804 5.89464 10.2929 5.70711C10.1054 5.51957 10 5.26522 10 5V3.41Z"
+                  fill="white"
+                /></svg
+            ></span>
+            <p>Export CSV</p>
+          </button>
+        </div>
+      </div>
+      <!-- this is devide line -->
+      <div class="evw_devide_line"><span></span></div>
+      <!-- End of  devide line -->
+
+      <!-- product -->
+      <div class="evw_product_details">
+        <!-- product details head -->
+        <div
+          class="product_evw_product_details_head common_product_details_styling"
+        >
+          <div class="product item">Product</div>
+          <div class="article_number item">Article number</div>
+          <div class="power item">Power</div>
+          <div class="phase item">Phase</div>
+          <div class="my_discount item">My Discount</div>
+          <div class="my_price item">My Price</div>
+        </div>
+
+        <!-- Product name image power phase discount price and category -->
+        <!-- item 1 -->
+        <div
+          class="product_evw_product_details_name common_product_details_styling"
+        >
+          <div class="product_image_name item">
+            <img src="assets/images/image_1.png" alt="" />
+            <div class="name_category">
+              <div class="name">XYZ product name</div>
+              <div class="category">Category</div>
+            </div>
+          </div>
+          <div class="article_number item">Article number</div>
+          <div class="power item">1000 W</div>
+          <div class="phase item">Single</div>
+          <div class="my_discount item">10%</div>
+          <div class="my_price item"><button>100$</button></div>
+        </div>
+
+        <!-- item 2 -->
+        <div
+          class="product_evw_product_details_name common_product_details_styling"
+        >
+          <div class="product_image_name item">
+            <img src="assets/images/image_2.png" alt="" />
+            <div class="name_category">
+              <div class="name">XYZ product name</div>
+              <div class="category">Category</div>
+            </div>
+          </div>
+          <div class="article_number item">Article number</div>
+          <div class="power item">1000 W</div>
+          <div class="phase item">Single</div>
+          <div class="my_discount item">10%</div>
+          <div class="my_price item"><button>100$</button></div>
+        </div>
+
+        <!-- item 3 -->
+        <div
+          class="product_evw_product_details_name common_product_details_styling"
+        >
+          <div class="product_image_name item">
+            <img src="assets/images/image_3.png" alt="" />
+            <div class="name_category">
+              <div class="name">XYZ product name</div>
+              <div class="category">Category</div>
+            </div>
+          </div>
+          <div class="article_number item">Article number</div>
+          <div class="power item">1000 W</div>
+          <div class="phase item">Single</div>
+          <div class="my_discount item">10%</div>
+          <div class="my_price item"><button>100$</button></div>
+        </div>
+
+        <!-- item 4 -->
+        <div
+          class="product_evw_product_details_name common_product_details_styling"
+        >
+          <div class="product_image_name item">
+            <img src="assets/images/image_4.png" alt="" />
+            <div class="name_category">
+              <div class="name">XYZ product name</div>
+              <div class="category">Category</div>
+            </div>
+          </div>
+          <div class="article_number item">Article number</div>
+          <div class="power item">1000 W</div>
+          <div class="phase item">Single</div>
+          <div class="my_discount item">10%</div>
+          <div class="my_price item"><button>100$</button></div>
+        </div>
+
+        <!-- item 5 -->
+        <div
+          class="product_evw_product_details_name common_product_details_styling"
+        >
+          <div class="product_image_name item">
+            <img src="assets/images/image_5.png" alt="" />
+            <div class="name_category">
+              <div class="name">XYZ product name</div>
+              <div class="category">Category</div>
+            </div>
+          </div>
+          <div class="article_number item">Article number</div>
+          <div class="power item">1000 W</div>
+          <div class="phase item">Single</div>
+          <div class="my_discount item">10%</div>
+          <div class="my_price item"><button>100$</button></div>
+        </div>
+
+        <!-- item 6 -->
+        <div
+          class="product_evw_product_details_name common_product_details_styling"
+        >
+          <div class="product_image_name item">
+            <img src="assets/images/image_6.png" alt="" />
+            <div class="name_category">
+              <div class="name">XYZ product name</div>
+              <div class="category">Category</div>
+            </div>
+          </div>
+          <div class="article_number item">Article number</div>
+          <div class="power item">1000 W</div>
+          <div class="phase item">Single</div>
+          <div class="my_discount item">10%</div>
+          <div class="my_price item"><button>100$</button></div>
+        </div>
+
+        <!-- items end here -->
+      </div>
+    </div>
+  </body>
+</html>

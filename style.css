@@ -1,0 +1,161 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Inter", sans-serif;
+  font-family: "Poppins", sans-serif;
+  color: #9d9d9d;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.evw_container {
+  padding: 0 16px;
+  margin-bottom: 52px;
+}
+.evw_my_prices_title {
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 32px;
+  margin: 16px 0;
+}
+.search_input_with_icon {
+  position: relative;
+}
+#input_field {
+  width: 100%;
+  border-radius: 9px;
+  border: 1px solid #7b7b7b;
+  height: 60px;
+  padding-left: 16px;
+  color: #9d9d9d;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+#input_field_search_icon {
+  position: absolute;
+  right: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.evw_apply_filter_title {
+  margin: 12px 0 16px 0;
+}
+.evw_section_items {
+  display: flex;
+  gap: 16px;
+}
+.all_items {
+  margin-top: 8px;
+}
+.common_items_styling {
+  border: 1px solid #9d9d9d;
+  flex: 1;
+  padding: 12px 12px 32px 14px;
+}
+.common_items_styling .all_items > * {
+  margin-bottom: 12px;
+}
+
+/* custom checkbox image */
+.checkbox {
+  display: none;
+}
+.custom-checkbox-container {
+  display: flex;
+  align-items: center;
+}
+.custom-checkbox-label {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  position: relative;
+}
+.custom-checkbox-label svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  fill: #000;
+}
+.custom-checkbox-label:before {
+  content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M9 11L12 14L20 6" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M20 12V18C20 18.5304 19.7893 19.0391 19.4142 19.4142C19.0391 19.7893 18.5304 20 18 20H6C5.46957 20 4.96086 19.7893 4.58579 19.4142C4.21071 19.0391 4 18.5304 4 18V6C4 5.46957 4.21071 4.96086 4.58579 4.58579C4.96086 4.21071 5.46957 4 6 4H15" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.checkbox:checked + .custom-checkbox-label svg {
+  display: none;
+}
+
+.checkbox:checked + .custom-checkbox-label:before {
+  display: block;
+}
+.evw_label {
+  padding-left: 8px;
+}
+/* custom checkbox image end */
+
+.evw_results_found_cvs_export {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 32px;
+}
+.evw_csv_export_button button {
+  display: flex;
+  align-items: center;
+  padding: 8px 20px;
+  border-radius: 8px;
+  background: #18a558;
+  color: #fff;
+  gap: 8px;
+  border: none;
+}
+.evw_csv_export_button p {
+  font-size: 18px;
+}
+
+.evw_devide_line {
+  height: 1px;
+  background: #9d9d9d;
+  margin: 12px 0 20px 0;
+}
+.product_evw_product_details_head {
+  margin-bottom: -8px;
+}
+.evw_product_details {
+  display: grid;
+  row-gap: 24px;
+}
+.common_product_details_styling {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr;
+  align-items: center;
+}
+.product_image_name {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.my_price button {
+  border-radius: 8px;
+  background: #18a558;
+  padding: 7px 54px;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  line-height: normal;
+}
+.product_image_name .name_category .name {
+  color: #000;
+  line-height: 18px;
+}
